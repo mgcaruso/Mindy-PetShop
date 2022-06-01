@@ -42,15 +42,17 @@ function displayCards(arr){
         template += `<div class="card" style="width: 18rem;">
         <img src="${producto.imagen}" class="card-img-top" alt="...">
         <div class="card-body">
+            <div class="texto">
             <h5 class="card-title">${producto.nombre}</h5>
             <p class="card-text">${producto.descripcion}</p>
+            </div>
             <div class="d-flex justify-content-evenly align-items-center">
-                <h6 class="card-title">$${producto.precio}</h6>
+                <h4 class="card-title">$${producto.precio}</h4>
                 <div class="comprar">
                 ${ boton === 1 ? `<button id="cart-btn-${producto._id}" onclick="addToCart('${producto._id}')" class="btn btn-success">Añadido <i class="bi bi-cart-check-fill"></i></button>` : `<button id="cart-btn-${producto._id}" onclick="addToCart('${producto._id}')" class="btn btn-primary">Comprar <i class="bi bi-cart-plus"></i></button>`}
                 </div>
             </div>
-            ${producto.stock < 5 ? `<p style="color:red" class="text-center mt-3"> ¡Ultimas unidades! </p>` : ``}
+            ${producto.stock < 5 ? `<p style="color:red" class="stock text-center mt-3"> ¡Ultimas unidades! </p>` : ``}
         </div>
     </div>`
     
