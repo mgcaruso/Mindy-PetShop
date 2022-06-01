@@ -338,3 +338,9 @@ p.card-text{
         height: 30rem;
     }
 }
+
+@media (max-width: 768px) {
+    #welcome{
+        object-position: 80%;
+    }
+}
