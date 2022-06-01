@@ -53,8 +53,8 @@ async function getDataforCarrito(){
                 <div class="g-0 d-flex flex-column p-5 d-flex justify-content-center text-center">
                     <h4>No hay productos en el carrito</h4>
                     <h5>Añade productos a la lista:</h5>
-                    <a class="nav-link p-3" href="/juguetes.html">Juguetes</a>
-                    <a class="nav-link p-3" href="/farmacia.html">Farmacia</a>
+                    <a style="color:#402E32; font-weight: bold" class="nav-link p-3" href="/juguetes.html">Juguetes</a>
+                    <a style="color:#402E32; font-weight: bold" class="nav-link p-3" href="/farmacia.html">Farmacia</a>
                 </div>
             </div>`
         }
