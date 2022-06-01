@@ -1,8 +1,4 @@
 var enCarrito = [];
-var templateVerCarrito = `<!-- Full screen modal -->
-<div class="modal-dialog modal-fullscreen-sm-down">
-    <p>esto es el contenido de la ventana</p>
-</div>`
 
 function addToCart(id){
     // var carritoStorage = JSON.parse(localStorage.getItem("carrito"));
@@ -14,12 +10,15 @@ function addToCart(id){
         //sacar del carrito
         enCarrito.splice(enCarrito.indexOf(id),1);
         document.getElementById(`cart-btn-${id}`).innerHTML = `Comprar <i class="bi bi-cart-plus"></i>`
-        document.getElementById(`cart-btn-${id}`).style.backgroundColor = `#0D6EFD`
+        document.getElementById(`cart-btn-${id}`).style.backgroundColor = `#402E32` 
+        document.getElementById(`cart-btn-${id}`).style.color = `white` 
+        document.getElementById(`cart-btn-${id}`).border = `1px solid #402E32` 
     }else{
         //meter en carrito
         enCarrito.push(id);
         document.getElementById(`cart-btn-${id}`).innerHTML = `Añadido <i class="bi bi-cart-check-fill"></i>`
         document.getElementById(`cart-btn-${id}`).style.backgroundColor = `#198754`
+        document.getElementById(`cart-btn-${id}`).style.color = `white` 
         document.getElementById(`cart-btn-${id}`).style.border = `1px solid #198754`
     }
 

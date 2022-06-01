@@ -308,8 +308,18 @@ h5.card-title{
     text-align: center;
 }
 
+
+.comprar-btn{
+    background-color: #402E32;
+    color:white;
+}
+
 h4.card-title,h5.card-title,p.stock{
     font-weight: bold;
+}
+
+p.card-text{
+    text-align: justify;
 }
 @media (max-width: 1280px ) {
     .contenedor-form-map{
