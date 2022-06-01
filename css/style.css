@@ -210,14 +210,17 @@ iframe{
 
 .visitanos{
     font-style: oblique;
-    background-color: orange;
+    font-weight: bold;
+    /* background-color: orange; */
     border-radius: 20%;
     margin-bottom: 1.5rem;
 }
 
 
 
-
+.carrito-btn{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 a[href="#"]{
     color:white !important;
@@ -316,6 +319,10 @@ h5.card-title{
 
 h4.card-title,h5.card-title,p.stock{
     font-weight: bold;
+}
+
+.body1 a.nav-link:hover{
+    color: white !important;
 }
 
 p.card-text{

@@ -37,8 +37,8 @@ async function getDataforCarrito(){
                 <div class="g-0 d-flex px-4">
                     <div class="col-md-8 d-flex align-items-center w-100">
                         <div class="card-body d-flex justify-content-between align-items-center">
-                        <button id="vaciar" class="btn btn">Vaciar carrito</button>
-                        <button id="pagar" class="btn btn-success">Pagar</button>
+                        <button id="vaciar" class="btn btn-danger carrito-btn">Vaciar carrito</button>
+                        <button id="pagar" class="btn btn-success carrito-btn">Pagar</button>
                         <h6 class="card-title mb-0">Total a pagar:</h6>
                         <h5 class="card-title mb-0">$${totalDeCompra}</h5>
                         </div>
